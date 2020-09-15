@@ -1,0 +1,292 @@
+body{
+	color: white;
+	background-color: #61122f;
+	font-family: oxygen , sans-serif;
+}
+h1{
+	font-size: 25px;
+}
+
+
+
+.container{
+	position: relative;
+}
+#header-nav {
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+	position: fixed;
+}
+#logo-img{
+	background: url("file:///C:/Users/JINO/coursera-practice/new%20logo.png") no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+.pull-left{
+	float: left;
+	
+}
+
+.navbar-brand{
+	padding-top: 25px;
+}
+.navbar-brand h1{
+font-family: Lora;
+color: green;
+font-size: 1.5em;
+text-transform: uppercase;
+font-weight: bold;
+text-shadow: 1px 1px 1px #222;
+margin-top: 0;
+margin-bottom: 0;
+line-height: .75;	
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration:none;
+}
+.navbar-brand p{/*koshercert*/
+	color: black ;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 15px;
+	float: left;
+
+}
+
+button{
+	float: right;
+	margin-top: 25px;
+	margin-left: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+.navbar-brand p span {
+	vertical-align: middle;
+}
+.container{
+	width: 100%;
+}
+.nav justify-content-end{
+	flex: end !important;	
+}
+.nav{
+	margin-top: 10px;
+}
+
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+#phone a{
+	padding-bottom: 0;
+}
+#phone div{
+	color: #557c3e;
+	text-align: right;
+	padding-right:22px;
+}
+.collapse navbar-collapse{
+	color: #61122f;
+	
+}
+
+/* Navigation links */
+.navbar a {
+ 
+  color:#951c49 ;
+  text-decoration: none;
+  font-size: 17px;
+   /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+#collapsibleNavbar a{
+	color: #951c49;
+	text-align: center; 
+	border: 1px solid #61122f;
+	font-size: 1.2em;
+}
+#collapsibleNavbar a span{
+	margin-right: 5px;
+}
+#collapsibleNavbar a:hover{
+	color: white;
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  color: white;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  color: #4CAF50;
+}
+.jumbotron{
+	padding-left: 0;
+	
+}
+#menu-tile, #specials-tile, #map-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile{
+	background: url(file:///C:/Users/JINO/coursera-practice/menu-tile.jpg) no-repeat;
+	background-position: center
+}
+#specials-tile{
+	background: url(file:///C:/Users/JINO/coursera-practice/special-tile.jpg) no-repeat;
+	background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+.panel-footer{
+	margin-top: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	background-color: grey;
+    border-top: 0;
+}
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+#hours > span, #address > span {
+	font-size: 1.3em;
+}
+#hours, #address{
+	line-height: 2;
+}
+#address p{
+	color:#61122f; 
+	font-size: .8em;
+	line-height: 1.8
+}
+#testimonials{
+	font-style: italic;
+}
+#testimonials p:nth-child(2){
+	margin-top: 25px;
+}
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 990px) {
+  .navbar a {
+  	flex: end;
+    text-align:right; /* If you want the text to be left-aligned on small screens */
+  }
+}
+@media(min-width: 1200px){
+	.jumbotron{
+		background: url(file:///C:/Users/JINO/coursera-practice/image%201000.jpeg) no-repeat center;
+		height:645px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+		padding:0;
+	}
+
+	
+
+}
+@media(min-width: 992px)and(max-width: 1199px){
+
+	.container-fluid.jumbotron{
+		background: url(file:///C:/Users/JINO/coursera-practice/image%20992.jpeg) no-repeat center;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+		height: 700px;
+		padding: 0;
+		
+	}
+	
+	.navbar a{
+		float: right;
+	}
+	.navbar-brand h1{
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+	.navbar-brand p{
+		text-transform: uppercase;
+		font-size: .6em;
+		margin-top: 12px;
+	}
+	.navbar-brand p img {
+		height: 20px;
+	}
+	
+
+
+   
+
+}
+@media(min-width: 768px)and(max-width: 991px){
+
+}
+@media(min-width: 600px)and(max-width: 767px){
+	.panel-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.panel-footer section:nth-child(3){
+		margin-bottom: 0;
+	}
+	.panel-footer section hr{
+		width: 50%	
+	}
+	.jumbotron{
+		background: url(file:///C:/Users/JINO/coursera-practice/image%20768.jpeg) no-repeat center;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+		height: 400px;
+	}
+	#menu-tile, #specials-tile{
+		width: 369px;
+		margin-bottom: 0 auto 15px auto;
+	}
+	
+
+}
+@media(max-width: 599px){
+	#menu-tile,#specials-tile{
+		width: 280px;
+		margin:0 auto 15px auto;
+	}
+	.panel-footer section:nth-child(3){
+		margin-bottom: 0;
+	}
+	.panel-footer section hr{
+		width: 50%	
+	}
+	.panel-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+}
+
+
+
+
+	
